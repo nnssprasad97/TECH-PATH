@@ -1,0 +1,90 @@
+/* Year Selector Slider Styles */
+.year-selector-container {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.year-selector-title {
+  font-size: 2rem;
+  color: #333333;
+  margin-bottom: 2rem;
+}
+
+.year-slider {
+  position: relative;
+  width: 980px; /* Similar to success stories slider */
+  height: 200px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.year-container {
+  color: #333333;
+  font: 16px Poppins, sans-serif;
+  background: linear-gradient(to bottom right,rgb(255, 254, 234),rgb(254, 254, 191));
+  padding: 32px 40px;
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateX(100%);
+  animation: yearSlideIn 12s infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.year-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.year-number {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #008738;
+  margin-bottom: 0.5rem;
+}
+
+.year-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #333333;
+}
+
+/* Animation for each year */
+.year-container:nth-child(1) {
+  animation-delay: 0s;
+}
+.year-container:nth-child(2) {
+  animation-delay: 3s;
+}
+.year-container:nth-child(3) {
+  animation-delay: 6s;
+}
+.year-container:nth-child(4) {
+  animation-delay: 9s;
+}
+
+@keyframes yearSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  8%, 25% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  33%, 100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+
+
+

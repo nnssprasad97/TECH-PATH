@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech-Path</title>
+     <link rel="icon" type="image/x-icon" href="/images/tech_path_logo_concept2__1_-removebg-preview.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/logincss.css">
+</head>
+<body>
+    <a href="index.html" class="back-to-home">
+        <i class="fas fa-arrow-left"></i> Back to Home
+    </a>
+
+    <div class="login-container">
+        <div class="login-form-section">
+            <div class="login-form-wrapper">
+                <div class="logo">
+                    <a href="index.html" class="logo-link">
+                        <img src="/images/tech_path_logo_concept2__1_-removebg-preview.png" alt="tech path" style="width: 90px; height: 50px;">
+                    </a>
+                </div>
+
+                <div class="login-header">
+                    <h1 class="login-title">Welcome Back</h1>
+                    <p class="login-subtitle">Login to continue your educational journey</p>
+                </div>
+
+                <form action="student_portal.html" method="GET">
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" class="form-input" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" id="password" class="form-input" placeholder="Enter your password" required>
+                    </div>
+
+                    <div class="form-footer">
+                        <div class="remember-me">
+                            <input type="checkbox" id="remember">
+                            <label for="remember">Remember me</label>
+                        </div>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="margin-bottom: 10px;">Login</button>
+                </form>
+
+             
+
+                <div class="social-login">
+                    <a href="#" class="social-btn">
+                        <i class="fab fa-google"></i>
+                        Google
+                    </a>
+                    <a href="#" class="social-btn">
+                        <i class="fab fa-facebook-f"></i>
+                        Facebook
+                    </a>
+                </div>
+
+                <div class="signup-link">
+                    Don't have an account? <a href="signup.html" target="_self">Sign up</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-section">
+         <video src="/images/Technical Hub Building.mp4" autoplay loop muted style="width: 100%; height: 100%; opacity: 0.6;"></video>
+        </div>
+    </div>
+</body>
+</html>

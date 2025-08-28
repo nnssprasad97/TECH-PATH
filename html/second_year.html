@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech-Path</title>
+     <link rel="icon" type="image/x-icon" href="/images/tech_path_logo_concept2__1_-removebg-preview.png">
+    <link rel="stylesheet" href="/css/year_styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .mentor-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 1rem;
+        }
+        
+        .mentor {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .mentor:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                   <img src="/images/tech_path_logo_concept2__1_-removebg-preview.png" style="width: 90px; height: 50px;">
+                </a>
+            </div>
+            
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="index.html#process" class="nav-link">Process</a></li>
+                    <li class="nav-item"><a href="index.html#reviews" class="nav-link">Reviews</a></li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Courses</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="first_year.html" class="dropdown-item">First Year</a></li>
+                            <li><a href="second_year.html" class="dropdown-item active">Second Year</a></li>
+                            <li><a href="third_year.html" class="dropdown-item">Third Year</a></li>
+                            <li><a href="fourth_year.html" class="dropdown-item">Fourth Year</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <a href="index.html#contact" class="btn btn-primary header-cta">Register Now</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Year Navigation -->
+        <section class="year-nav">
+            <div class="container">
+                <div class="year-nav-wrapper">
+                    <a href="first_year.html" class="year-link">First Year</a>
+                    <a href="second_year.html" class="year-link active">Second Year</a>
+                    <a href="third_year.html" class="year-link">Third Year</a>
+                    <a href="fourth_year.html" class="year-link">Fourth Year</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Year Header -->
+        <section class="year-header">
+            <div class="container">
+                <div class="section-header">
+                    <h1 class="section-title">Second Year Courses</h1>
+                    <p class="section-subtitle">Intermediate courses to expand your technical expertise and practical skills</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs Section -->
+        <section class="programs">
+            <div class="container">
+                <div class="programs-grid">
+                    <!-- Program 1 -->
+                    <div class="program-card" id="program-skillup">
+                        <div class="program-header">
+                            <h2 class="program-title">Oops with Java</h2>
+                            <span class="program-icon"><i class="fas fa-laptop-code"></i></span>
+                        </div>
+                        <p class="program-description">Master OOPs with Java and elevate your coding through real-world projects and advanced object-oriented concepts.</p>
+                        <a href="#tech-skillup" class="btn btn-outline program-btn">View Technologies</a>
+                    </div>
+
+                    <!-- Program 2 -->
+                    <div class="program-card" id="program-oas">
+                        <div class="program-header">
+                            <h2 class="program-title">Oops with python</h2>
+                            <span class="program-icon"><i class="fas fa-cogs"></i></span>
+                        </div>
+                        <p class="program-description">Master OOPs with Python and boost your coding skills through real-world applications and advanced object-oriented principles.</p>
+                        <a href="#tech-oas" class="btn btn-outline program-btn">View Technologies</a>
+                    </div>
+
+                    <!-- Program 3 -->
+                    <div class="program-card" id="program-java">
+                        <div class="program-header">
+                            <h2 class="program-title">Advanced Data Structures</h2>
+                            <span class="program-icon"><i class="fab fa-java"></i></span>
+                        </div>
+                        <p class="program-description">Strengthen your problem-solving skills with Advanced Data Structures and Algorithms for efficient and real-world coding mastery.</p>
+                        <a href="#tech-java" class="btn btn-outline program-btn">View Technologies</a>
+                    </div>
+                </div>
+                <br>
+                <div class="programs-grid">
+                    <!-- Program 4 -->
+                    <div class="program-card" id="program-skillup">
+                        <div class="program-header">
+                            <h2 class="program-title">Database Management System</h2>
+                            <span class="program-icon"><i class="fas fa-laptop-code"></i></span>
+                        </div>
+                        <p class="program-description">Master DBMS fundamentals and advanced concepts to design, manage, and optimize real-world database systems efficiently.</p>
+                        <a href="#tech-skillup" class="btn btn-outline program-btn">View Technologies</a>
+                    </div>
+
+                    <!-- Program 5 -->
+                    <div class="program-card" id="program-oas">
+                        <div class="program-header">
+                            <h2 class="program-title">Operating System</h2>
+                            <span class="program-icon"><i class="fas fa-cogs"></i></span>
+                        </div>
+                        <p class="program-description">Gain in-depth knowledge of Operating Systems to understand system-level processes, memory management, and real-world OS functionalities.</p>
+                        <a href="#tech-oas" class="btn btn-outline program-btn">View Technologies</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technologies Section -->
+        <section class="technologies">
+            <div class="container">
+                <!-- Skill Up Coder Technologies -->
+                <div class="tech-section" id="tech-skillup">
+                    <div class="tech-header">
+                        <h2 class="tech-title">Oops with Java</h2>
+                        <p class="tech-subtitle">Master OOPs with Java and elevate your coding through real-world projects and advanced object-oriented concepts.</p>
+                    </div>
+                    <div class="tech-grid">
+                        <!-- Technology 1 -->
+                        <div class="tech-card">
+                            <div class="tech-card-header">
+                                <h3 class="tech-name">Advanced Oops Concepts in java</h3>
+                                <span class="tech-icon"><i class="fas fa-puzzle-piece"></i></span>
+                            </div>
+                            <p class="tech-description">Master OOPs with Java and elevate your coding through real-world projects and advanced object-oriented concepts.</p>
+                            
+                            <div class="mentors">
+                                <h4 class="mentors-title">Mentors</h4>
+                                <div class="mentors-list">
+                                    <div class="mentor">
+                                        <img src="/images/saikala.png" alt="Prof. Vikram Desai" class="mentor-image">
+                                        <div class="mentor-info">
+                                            <h5 class="mentor-name">Saikala</h5>
+                                            <p class="mentor-credentials">Technical Trainer</p>
+                                        </div>
+                                    </div>
+                                    <div class="mentor">
+                                        <img src="/images/srilekha.png" alt="Ms. Ritu Sharma" class="mentor-image">
+                                        <div class="mentor-info">
+                                            <h5 class="mentor-name">Srilekha</h5>
+                                            <p class="mentor-credentials">Technical Trainer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- OAS Technologies -->
+                <div class="tech-section" id="tech-oas">
+                    <div class="tech-header">
+                        <h2 class="tech-title">Oops with Python</h2>
+                        <p class="tech-subtitle">Master OOPs with Python and boost your coding skills through real-world applications and advanced object-oriented principles.</p>
+                    </div>
+                    <div class="tech-grid">
+                        <!-- Technology 1 -->
+                        <div class="tech-card">
+                            <div class="tech-card-header">
+                                <h3 class="tech-name">Advanced Oops Concepts in python</h3>
+                                <span class="tech-icon"><i class="fas fa-puzzle-piece"></i></span>
+                            </div>
+                            <p class="tech-description">Master OOPs with python and elevate your coding through real-world projects and advanced object-oriented concepts.</p>
+                            
+                            <div class="mentors">
+                                <h4 class="mentors-title">Mentors</h4>
+                                <div class="mentors-list">
+                                    <div class="mentor">
+                                        <img src="/images/pavan.jpeg" alt="Ms. Ritu Sharma" class="mentor-image">
+                                        <div class="mentor-info">
+                                            <h5 class="mentor-name">Pavan B</h5>
+                                            <p class="mentor-credentials">Technical Team Lead</p>
+                                        </div>
+                                    </div>
+                                    <div class="mentor">
+                                        <img src="/images/ganapathi.jpeg" alt="Prof. Vikram Desai" class="mentor-image">
+                                        <div class="mentor-info">
+                                            <h5 class="mentor-name">Nagendra Ganapathi</h5>
+                                            <p class="mentor-credentials">Technical Trainer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Java Programming Technologies -->
+                <div class="tech-section" id="tech-java">
+                    <div class="tech-header">
+                        <h2 class="tech-title">Advance Data Structures and algorithms</h2>
+                        <p class="tech-subtitle">Master Algorithms and Advanced Data Structures to solve complex problems efficiently and excel in real-world coding challenges.</p>
+                    </div>
+                    <div class="tech-grid">
+                        <!-- Technology 1 -->
+                        <div class="tech-card">
+                            <div class="tech-card-header">
+                                <h3 class="tech-name">Advanced Dsa and Algorithms</h3>
+                                <span class="tech-icon"><i class="fas fa-puzzle-piece"></i></span>
+                            </div>
+                            <p class="tech-description">Strengthen your problem-solving skills with Advanced Data Structures and Algorithms for efficient and real-world coding mastery.</p>
+                            
+                            <div class="mentors">
+                                <h4 class="mentors-title">Mentors</h4>
+                                <div class="mentors-list">
+                                    <div class="mentor">
+                                        <img src="/images/ashok.jpeg" alt="Prof. Vikram Desai" class="mentor-image">
+                                        <div class="mentor-info">
+                                            <h5 class="mentor-name">Ashok M</h5>
+                                            <p class="mentor-credentials">Program Manager Coding</p>
+                                        </div>
+                                    </div>
+                                    <div class="mentor">
+                                        <img src="/images/pavan.jpeg" alt="Ms. Ritu Sharma" class="mentor-image">
+                                        <div class="mentor-info">
+                                            <h5 class="mentor-name">Pavan B</h5>
+                                            <p class="mentor-credentials">Technical Team Lead</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-section" id="tech-oas">
+                    <div class="tech-header">
+                        <h2 class="tech-title">Database Management System</h2>
+                        <p class="tech-subtitle">Master DBMS fundamentals and advanced concepts to design, manage, and optimize real-world database systems efficiently.</p>
+                    </div>
+                    <div class="tech-grid">
+                        <!-- Technology 1 -->
+                        <div class="tech-card">
+                            <div class="tech-card-header">
+                                <h3 class="tech-name">Database Management</h3>
+                                <span class="tech-icon"><i class="fas fa-puzzle-piece"></i></span>
+                            </div>
+                            <p class="tech-description">Master DBMS fundamentals and advanced concepts to design, manage, and optimize real-world database systems efficiently.</p>
+                            
+                            <div class="mentors">
+                                <h4 class="mentors-title">Mentors</h4>
+                                <div class="mentors-list">
+                                    <div class="mentor">
+                                        <img src="/images/saikala.png" alt="Prof. Vikram Desai" class="mentor-image">
+                                        <div class="mentor-info">
+                                            <h5 class="mentor-name">Saikala</h5>
+                                            <p class="mentor-credentials">Technical Trainer</p>
+                                        </div>
+                                    </div>
+                                    <div class="mentor">
+                                        <img src="/images/pavan.jpeg" alt="Ms. Ritu Sharma" class="mentor-image">
+                                        <div class="mentor-info">
+                                            <h5 class="mentor-name">Pavan B</h5>
+                                            <p class="mentor-credentials">Technical Team Lead</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Java Programming Technologies -->
+                <div class="tech-section" id="tech-java">
+                    <div class="tech-header">
+                        <h2 class="tech-title">Operating System</h2>
+                        <p class="tech-subtitle">Gain in-depth knowledge of Operating Systems to understand system-level processes, memory management, and real-world OS functionalities.</p>
+                    </div>
+                    <div class="tech-grid">
+                        <!-- Technology 1 -->
+                        <div class="tech-card">
+                            <div class="tech-card-header">
+                                <h3 class="tech-name">Operating System with Linux</h3>
+                                <span class="tech-icon"><i class="fas fa-puzzle-piece"></i></span>
+                            </div>
+                            <p class="tech-description">Gain in-depth knowledge of Operating Systems to understand system-level processes, memory management, and real-world OS functionalities.</p>
+                            
+                            <div class="mentors">
+                                <h4 class="mentors-title">Mentors</h4>
+                                <div class="mentors-list">
+                                    <div class="mentor">
+                                        <img src="/images/shaifu.png" alt="Prof. Vikram Desai" class="mentor-image">
+                                        <div class="mentor-info">
+                                            <h5 class="mentor-name">MD.Shaifu</h5>
+                                            <p class="mentor-credentials">Program Manager</p>
+                                        </div>
+                                    </div>
+                                    <div class="mentor">
+                                        <img src="/images/teja.png" alt="Ms. Ritu Sharma" class="mentor-image">
+                                        <div class="mentor-info">
+                                            <h5 class="mentor-name">Pavan Teja</h5>
+                                            <p class="mentor-credentials">Technical Team Lead</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Year Navigation Footer -->
+        <section class="year-footer">
+            <div class="container">
+                <div class="year-nav-footer">
+                    <p>Continue your learning journey</p>
+                    <div class="year-buttons">
+                        <a href="first_year.html" class="btn btn-outline">Previous: First Year Courses</a>
+                        <a href="third_year.html" class="btn btn-primary">Next: Third Year Courses</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo-link">
+                        <img src="/images/tech_path_logo_concept2__1_-removebg-preview.png" style="width: 90px; height: 50px;">
+                    </a>
+                    <p class="footer-tagline">Guiding Your Educational Journey</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#process">Process</a></li>
+                        <li><a href="index.html#reviews">Reviews</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-heading">Course Years</h4>
+                    <ul class="footer-nav">
+                        <li><a href="first_year.html">First Year</a></li>
+                        <li><a href="second_year.html">Second Year</a></li>
+                        <li><a href="third_year.html">Third Year</a></li>
+                        <li><a href="fourth_year.html">Fourth Year</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <ul class="footer-contact-list">
+                        <li>+91 83438 18181</li>
+                        <li>support@techpath.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 Tech Path. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

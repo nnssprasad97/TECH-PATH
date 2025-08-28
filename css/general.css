@@ -1,0 +1,148 @@
+/*Base Styles*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: "Poppins",sans-serif;
+    color: #333333;
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+
+p{
+    margin-bottom: 1rem;
+}
+
+a{
+    color: #008738;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #005f30;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Container */
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Section Styles */
+section{
+    padding: 3rem 0;
+}
+
+.section-header{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-title{
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #333333;
+}
+
+.section-subtitle{
+    font-size: 1.1rem;
+    color: #666666;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Button Styles */
+.btn{
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    font-family: "Poppins",sans-serif;
+}
+
+.btn-primary{
+    background-color: #008738;
+    color: white;
+    transition: 
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.btn-primary:hover{
+    background-color: rgb(0,95,39);
+    color: white;
+    border-color: rgb(0, 95, 39);
+    transform: scale(1.05); /* Slightly enlarge the button */
+    box-shadow: 0 5px 15px rgba(0, 95, 39, 0.6); /* Add a shadow effect */
+}
+
+.btn-primary:active{
+    transform: scale(0.95);
+    box-shadow: 0 2px 10px rgba(0, 95, 39, 0.3);
+}
+
+.btn-secondary{
+    background-color: rgb(238, 192, 86);
+    color: white;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.btn-secondary:hover{
+    background-color: rgb(244, 180, 30);
+    color: white;
+    border-color: rgb(244, 180, 30);
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(244, 180, 30, 0.6);
+}
+
+.btn-secondary:active{
+    transform: scale(0.95);
+    box-shadow: 0 2px 10px rgba(244, 180, 30, 0.3);
+}
+
+.btn-outline{
+    background-color: transparent;
+    border: 2px solid #008738;
+    color: #008738;
+}
+
+.btn-outline:hover{
+    background-color: #008738;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech-Path</title>
+    <link rel="icon" type="image/x-icon" href="/images/tech_path_logo_concept2__1_-removebg-preview.png">
+   <link rel="stylesheet" href="/css/year_styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .mentor-image {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 1rem;
+      }
+
+      .mentor {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .mentor:last-child {
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header & Navigation -->
+    <header class="header">
+      <div class="container header-container">
+        <div class="logo">
+          <a href="index.html" class="logo-link">
+           <img src="/images/tech_path_logo_concept2__1_-removebg-preview.png" style="width: 90px; height: 50px;">
+          </a>
+        </div>
+
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#process" class="nav-link">Process</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#reviews" class="nav-link">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link active">Courses</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="first_year.html" class="dropdown-item">First Year</a>
+                </li>
+                <li>
+                  <a href="second_year.html" class="dropdown-item"
+                    >Second Year</a
+                  >
+                </li>
+                <li>
+                  <a href="third_year.html" class="dropdown-item active"
+                    >Third Year</a
+                  >
+                </li>
+                <li>
+                  <a href="fourth_year.html" class="dropdown-item"
+                    >Fourth Year</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a href="index.html#contact" class="btn btn-primary header-cta"
+          >Register Now</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <!-- Year Navigation -->
+      <section class="year-nav">
+        <div class="container">
+          <div class="year-nav-wrapper">
+            <a href="first_year.html" class="year-link">First Year</a>
+            <a href="second_year.html" class="year-link">Second Year</a>
+            <a href="third_year.html" class="year-link active">Third Year</a>
+            <a href="fourth_year.html" class="year-link">Fourth Year</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Year Header -->
+      <section class="year-header">
+        <div class="container">
+          <div class="section-header">
+            <h1 class="section-title">Third Year Courses</h1>
+            <p class="section-subtitle">
+              Advanced courses to specialize in your chosen technology path
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Programs Section -->
+      <section class="programs">
+        <div class="container">
+          <div class="programs-grid">
+            <!-- Program 1 -->
+            <div class="program-card" id="program-fht-react">
+              <div class="program-header">
+                <h2 class="program-title">FSD with React Native</h2>
+                <span class="program-icon"><i class="fab fa-react"></i></span>
+              </div>
+              <p class="program-description">
+                Learn Full-stack Hybrid Technology development with React Native
+                for cross-platform mobile applications.
+              </p>
+              <a href="#tech-fht-react" class="btn btn-outline program-btn"
+                >View Technologies</a
+              >
+            </div>
+
+            <!-- Program 2 -->
+
+            <div class="program-card" id="program-aws">
+              <div class="program-header">
+                <h2 class="program-title">AWS</h2>
+                <span class="program-icon"><i class="fab fa-aws"></i></span>
+              </div>
+              <p class="program-description">
+                Master Amazon Web Services cloud platform for building scalable
+                and reliable applications.
+              </p>
+              <a
+                href="#tech-aws"
+                style="margin-top: 25px"
+                class="btn btn-outline program-btn"
+                >View Technologies</a
+              >
+            </div>
+
+            <!-- Program 3 -->
+            <div class="program-card" id="program-fht-flutter">
+              <div class="program-header">
+                <h2 class="program-title">FSD with Flutter</h2>
+                <span class="program-icon"
+                  ><i class="fas fa-mobile-alt"></i
+                ></span>
+              </div>
+              <p class="program-description">
+                Develop Full-stack Hybrid Technology applications using Flutter
+                for beautiful, natively compiled applications.
+              </p>
+              <a href="#tech-fht-flutter" class="btn btn-outline program-btn"
+                >View Technologies</a
+              >
+            </div>
+
+            <!-- Program 4 -->
+            <div class="program-card" id="program-servicenow">
+              <div class="program-header">
+                <h2 class="program-title">ServiceNow</h2>
+                <span class="program-icon"><i class="fas fa-cogs"></i></span>
+              </div>
+              <p class="program-description">
+                Learn ServiceNow and Pega platforms for enterprise workflow
+                automation and business process management.
+              </p>
+              <a href="#tech-servicenow" class="btn btn-outline program-btn"
+                >View Technologies</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technologies Section -->
+      <section class="technologies">
+        <div class="container">
+          <!-- FHT with React Native Technologies -->
+          <div class="tech-section" id="tech-fht-react">
+            <div class="tech-header">
+              <h2 class="tech-title">FSD with React Native</h2>
+              <p class="tech-subtitle">
+                Full-stack Hybrid Technology development with React Native
+              </p>
+            </div>
+
+            <div class="tech-grid">
+              <!-- Technology 1 -->
+              <div class="tech-card">
+                <div class="tech-card-header">
+                  <h3 class="tech-name">React Native Development</h3>
+                  <span class="tech-icon"><i class="fab fa-react"></i></span>
+                </div>
+                <p class="tech-description">
+                  Build cross-platform mobile applications using React Native
+                  framework and JavaScript.
+                </p>
+
+                <div class="mentors">
+                  <h4 class="mentors-title">Mentors</h4>
+                  <div class="mentors-list">
+                    <div class="mentor">
+                      <img
+                        src="/images/dsp.jpeg"
+                        alt="Durga Sai Prasad"
+                        class="mentor-image"
+                      />
+                      <div class="mentor-info">
+                        <h5 class="mentor-name">Durga Sai Prasad</h5>
+                        <p class="mentor-credentials">
+                          Senior React Native Developer, Mobile App Specialist
+                        </p>
+                      </div>
+                    </div>
+                    <div class="mentor">
+                      <img
+                        src="/images/girish.png"
+                        alt="Girish"
+                        class="mentor-image"
+                      />
+                      <div class="mentor-info">
+                        <h5 class="mentor-name">Girish</h5>
+                        <p class="mentor-credentials">
+                          Mobile App Developer, React Native Trainer
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Technology 2 -->
+            </div>
+          </div>
+
+          <!-- AWS Technologies -->
+          <div class="tech-section" id="tech-aws">
+            <div class="tech-header">
+              <h2 class="tech-title">AWS</h2>
+              <p class="tech-subtitle">
+                Cloud computing services for modern application development
+              </p>
+            </div>
+
+            <div class="tech-grid">
+              <!-- Technology 1 -->
+              <div class="tech-card">
+                <div class="tech-card-header">
+                  <h3 class="tech-name">AWS Core Services</h3>
+                  <span class="tech-icon"><i class="fab fa-aws"></i></span>
+                </div>
+                <p class="tech-description">
+                  Master essential AWS services including EC2, S3, RDS, Lambda,
+                  and IAM for building cloud-native applications.
+                </p>
+
+                <div class="mentors">
+                  <h4 class="mentors-title">Mentors</h4>
+                  <div class="mentors-list">
+                    <div class="mentor">
+                      <img
+                        src="/images/shaifu.png"
+                        alt="Mr. Amit Singh"
+                        class="mentor-image"
+                      />
+                      <div class="mentor-info">
+                        <h5 class="mentor-name">MD.Shaifu</h5>
+                        <p class="mentor-credentials">
+                          AWS Certified Solutions Architect, Cloud Consultant
+                        </p>
+                      </div>
+                    </div>
+                    <div class="mentor">
+                      <img
+                        src="/images/Kishore-AWS.png"
+                        alt="Ms. Deepa Krishnan"
+                        class="mentor-image"
+                      />
+                      <div class="mentor-info">
+                        <h5 class="mentor-name">Nagendra Kishore</h5>
+                        <p class="mentor-credentials">
+                          DevOps Engineer, AWS Specialist, Former Amazon
+                          Employee
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Technology 2 -->
+            </div>
+          </div>
+
+          <!-- FHT with Flutter Technologies -->
+          <div class="tech-section" id="tech-fht-flutter">
+            <div class="tech-header">
+              <h2 class="tech-title">FSD with Flutter</h2>
+              <p class="tech-subtitle">
+                Full-stack Hybrid Technology development with Flutter
+              </p>
+            </div>
+
+            <div class="tech-grid">
+              <!-- Technology 1 -->
+              <div class="tech-card">
+                <div class="tech-card-header">
+                  <h3 class="tech-name">Flutter Development</h3>
+                  <span class="tech-icon"
+                    ><i class="fas fa-mobile-alt"></i
+                  ></span>
+                </div>
+                <p class="tech-description">
+                  Build beautiful, natively compiled applications for mobile,
+                  web, and desktop from a single codebase using Flutter.
+                </p>
+
+                <div class="mentors">
+                  <h4 class="mentors-title">Mentors</h4>
+                  <div class="mentors-list">
+                    <div class="mentor">
+                      <img
+                        src="/images/vasantharao-FLUTTER.png"
+                        alt="Veera Vasantharao"
+                        class="mentor-image"
+                      />
+                      <div class="mentor-info">
+                        <h5 class="mentor-name">Veera Vasantharao</h5>
+                        <p class="mentor-credentials">
+                          Senior Flutter Developer, Google Developer Expert
+                        </p>
+                      </div>
+                    </div>
+                    <div class="mentor">
+                      <img
+                        src="/images/NANDA-FLUTTER.png"
+                        alt=" Nanda"
+                        class="mentor-image"
+                      />
+                      <div class="mentor-info">
+                        <h5 class="mentor-name">Nanda Kumar</h5>
+                        <p class="mentor-credentials">
+                          Mobile App Developer, Flutter UI/UX Specialist
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Technology 2 -->
+            </div>
+          </div>
+
+          <!-- ServiceNow Pega Technologies -->
+          <div class="tech-section" id="tech-servicenow">
+            <div class="tech-header">
+              <h2 class="tech-title">ServiceNow</h2>
+              <p class="tech-subtitle">
+                Enterprise workflow automation and business process management
+              </p>
+            </div>
+
+            <div class="tech-grid">
+              <!-- Technology 1 -->
+              <div class="tech-card">
+                <div class="tech-card-header">
+                  <h3 class="tech-name">ServiceNow Platform</h3>
+                  <span class="tech-icon"><i class="fas fa-server"></i></span>
+                </div>
+                <p class="tech-description">
+                  Learn to develop, customize, and implement ServiceNow
+                  solutions for IT service management and enterprise workflows.
+                </p>
+
+                <div class="mentors">
+                  <h4 class="mentors-title">Mentors</h4>
+                  <div class="mentors-list">
+                    <div class="mentor">
+                      <img
+                        src="/images/sampath-service.png"
+                        alt="Rayi Sampath"
+                        class="mentor-image"
+                      />
+                      <div class="mentor-info">
+                        <h5 class="mentor-name">Rayi Sampath</h5>
+                        <p class="mentor-credentials">
+                          ServiceNow Certified Administrator, ITSM Consultant
+                        </p>
+                      </div>
+                    </div>
+                    <div class="mentor">
+                      <img
+                        src="/images/babu-service.png"
+                        alt="Mutyala babu"
+                        class="mentor-image"
+                      />
+                      <div class="mentor-info">
+                        <h5 class="mentor-name">Mutyala babu</h5>
+                        <p class="mentor-credentials">
+                          ServiceNow Developer, Workflow Automation Expert
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Technology 2 -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Year Navigation Footer -->
+      <section class="year-footer">
+        <div class="container">
+          <div class="year-nav-footer">
+            <p>Continue your learning journey</p>
+            <div class="year-buttons">
+              <a href="second_year.html" class="btn btn-outline"
+                >Previous: Second Year Courses</a
+              >
+              <a href="fourth_year.html" class="btn btn-primary"
+                >Next: Fourth Year Courses</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="logo-link">
+           <img src="/images/tech_path_logo_concept2__1_-removebg-preview.png" style="width: 90px; height: 50px;">
+            </a>
+            <p class="footer-tagline">Guiding Your Educational Journey</p>
+          </div>
+
+          <div class="footer-links">
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul class="footer-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#process">Process</a></li>
+              <li><a href="index.html#reviews">Reviews</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4 class="footer-heading">Course Years</h4>
+            <ul class="footer-nav">
+              <li><a href="first_year.html">First Year</a></li>
+              <li><a href="second_year.html">Second Year</a></li>
+              <li><a href="third_year.html">Third Year</a></li>
+              <li><a href="fourth_year.html">Fourth Year</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4 class="footer-heading">Contact Us</h4>
+            <ul class="footer-contact-list">
+              <li>+91 83438 18181</li>
+              <li>support@techpath.com</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">&copy; 2025 Tech Path. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

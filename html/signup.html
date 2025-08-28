@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech-Path</title>
+     <link rel="icon" type="image/x-icon" href="/images/tech_path_logo_concept2__1_-removebg-preview.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/signupcss.css">
+</head>
+<body>
+    <a href="index.html" class="back-to-home">
+        <i class="fas fa-arrow-left"></i> Back to Home
+    </a>
+
+    <div class="signup-container">
+        <div class="signup-form-section">
+            <div class="signup-form-wrapper">
+                <div class="logo">
+                    <a href="index.html" class="logo-link">
+                        <span class="logo-text">Tech Path</span>
+                    </a>
+                </div>
+
+                <div class="signup-header">
+                    <h1 class="signup-title">Create Account</h1>
+                    <p class="signup-subtitle">Join Tech Path to start your educational journey</p>
+                </div>
+
+                <form action="student_portal.html" method="GET">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name" class="form-label">First Name</label>
+                            <input type="text" id="first-name" class="form-input" placeholder="Enter first name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name" class="form-label">Last Name</label>
+                            <input type="text" id="last-name" class="form-input" placeholder="Enter last name" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" class="form-input" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" id="phone" class="form-input" placeholder="Enter your phone number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" id="password" class="form-input" placeholder="Create a password" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm-password" class="form-label">Confirm Password</label>
+                        <input type="password" id="confirm-password" class="form-input" placeholder="Confirm your password" required>
+                    </div>
+
+                    <div class="terms">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">
+                            I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="margin-bottom: 10px;">Sign Up</button>
+                </form>
+
+                
+
+                <div class="social-signup">
+                    <a href="#" class="social-btn">
+                        <i class="fab fa-google"></i>
+                        Google
+                    </a>
+                    <a href="#" class="social-btn">
+                        <i class="fab fa-facebook-f"></i>
+                        Facebook
+                    </a>
+                </div>
+
+                <div class="login-link">
+                    Already have an account? <a href="login.html">Login</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-section">
+            <video src="/images/Technical Hub Building.mp4" autoplay loop muted style="width: 100%; height: 100%; opacity: 0.6;"></video>
+        </div>
+    </div>
+</body>
+</html>

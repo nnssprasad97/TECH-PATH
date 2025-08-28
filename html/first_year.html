@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech-Path</title>
+     <link rel="icon" type="image/x-icon" href="/images/tech_path_logo_concept2__1_-removebg-preview.png">
+    <link rel="stylesheet" href="/css/Year_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .mentor-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 1rem;
+        }
+        
+        .mentor {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .mentor:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="/images/tech_path_logo_concept2__1_-removebg-preview.png" style="width: 90px; height: 50px;">
+                </a>
+            </div>
+            
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="index.html#process" class="nav-link">Process</a></li>
+                    <li class="nav-item"><a href="index.html#reviews" class="nav-link">Reviews</a></li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Courses</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="first_year.html" class="dropdown-item active">First Year</a></li>
+                            <li><a href="second_year.html" class="dropdown-item">Second Year</a></li>
+                            <li><a href="third_year.html" class="dropdown-item">Third Year</a></li>
+                            <li><a href="fourth_year.html" class="dropdown-item">Fourth Year</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <a href="index.html#contact" class="btn btn-primary header-cta">Register Now</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Year Navigation -->
+        <section class="year-nav">
+            <div class="container">
+                <div class="year-nav-wrapper">
+                    <a href="first_year.html" class="year-link active">First Year</a>
+                    <a href="second_year.html" class="year-link">Second Year</a>
+                    <a href="third_year.html" class="year-link">Third Year</a>
+                    <a href="fourth_year.html" class="year-link">Fourth Year</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Year Header -->
+        <section class="year-header">
+            <div class="container">
+                <div class="section-header">
+                    <h1 class="section-title">First Year Courses</h1>
+                    <p class="section-subtitle">Foundation courses to build your technical knowledge and skills</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs Section -->
+        <section class="programs">
+            <div class="container">
+                <div class="programs-grid">
+                    <!-- Program 1 -->
+                    <div class="program-card" id="program-c">
+                        <div class="program-header">
+                            <h2 class="program-title">C Programming</h2>
+                            <span class="program-icon"><i class="fas fa-code"></i></span>
+                        </div>
+                        <p class="program-description">Master the fundamentals of programming with C, the foundation language that powers operating systems and embedded devices.</p>
+                        <a href="#tech-c" class="btn btn-outline program-btn">View Technologies</a>
+                    </div>
+
+                    <!-- Program 2 -->
+                    <div class="program-card" id="program-dsa">
+                        <div class="program-header">
+                            <h2 class="program-title">Data Structures & Algorithms</h2>
+                            <span class="program-icon"><i class="fas fa-project-diagram"></i></span>
+                        </div>
+                        <p class="program-description">Learn essential data structures and algorithms to solve complex problems efficiently and optimize your code.</p>
+                        <a href="#tech-dsa" class="btn btn-outline program-btn">View Technologies</a>
+                    </div>
+
+                    <!-- Program 3 -->
+                    <div class="program-card" id="program-html-css">
+                        <div class="program-header">
+                            <h2 class="program-title">HTML & CSS</h2>
+                            <span class="program-icon"><i class="fas fa-globe"></i></span>
+                        </div>
+                        <p class="program-description">Build the foundation of web development by learning to create and style web pages with HTML and CSS.</p>
+                        <a href="#tech-html-css" class="btn btn-outline program-btn">View Technologies</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technologies Section -->
+        <section class="technologies">
+            <div class="container">
+                <!-- C Programming Technologies -->
+                <div class="tech-section" id="tech-c">
+                    <div class="tech-header">
+                        <h2 class="tech-title">C Programming</h2>
+                        <p class="tech-subtitle">The foundation language of computer science and system programming</p>
+                    </div>
+                    
+                    <div class="tech-grid">
+                        <!-- Technology 1 -->
+                        <div class="tech-card">
+                            <div class="tech-card-header">
+                                <h3 class="tech-name">C Language Fundamentals</h3>
+                                <span class="tech-icon"><i class="fas fa-code"></i></span>
+                            </div>
+                            <p class="tech-description">Learn the core concepts of C programming including variables, data types, operators, control structures, functions, and memory management.</p>
+                             <div class="mentors">
+                                <h4 class="mentors-title">Mentors</h4>
+                                <div class="mentors-list">
+                                    <div class="mentor">
+                                        <img src="/images/ganapathi.jpeg" alt="Dr. Neha Gupta" class="mentor-image">
+                                        <div class="mentor-info">
+                                            <h5 class="mentor-name"> Nagendra Ganapathi</h5>
+                                            <p class="mentor-credentials">Technical Trainer</p>
+                                        </div>
+                                    </div>
+                                    <div class="mentor">
+                                        <img src="/images/pavan.jpeg" alt="Mr. Vikram Singh" class="mentor-image">
+                                        <div class="mentor-info">
+                                            <h5 class="mentor-name">Pavan B</h5>
+                                            <p class="mentor-credentials">Technical Team Lead</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- DSA Technologies -->
+                <div class="tech-section" id="tech-dsa">
+                    <div class="tech-header">
+                        <h2 class="tech-title">Data Structures & Algorithms</h2>
+                        <p class="tech-subtitle">Essential concepts for efficient problem-solving and code optimization</p>
+                    </div>
+                    
+                    <div class="tech-grid">
+                        <!-- Technology 1 -->
+                        <div class="tech-card">
+                            <div class="tech-card-header">
+                                <h3 class="tech-name">Basic Data Structures</h3>
+                                <span class="tech-icon"><i class="fas fa-sitemap"></i></span>
+                            </div>
+                            <p class="tech-description">Learn fundamental data structures including arrays, linked lists, stacks, queues, and their implementation and applications.</p>
+                             <div class="mentors">
+                                <h4 class="mentors-title">Mentors</h4>
+                                <div class="mentors-list">
+                                    <div class="mentor">
+                                        <img src="/images/ashok.jpeg" alt="Ms. Priya Sharma" class="mentor-image">
+                                        <div class="mentor-info">
+                                            <h5 class="mentor-name">Ashok M</h5>
+                                            <p class="mentor-credentials">Program Manager Coding</p>
+                                        </div>
+                                    </div>
+                                    <div class="mentor">
+                                        <img src="/images/pavan.jpeg" alt="Prof. Rajesh Kumar" class="mentor-image">
+                                        <div class="mentor-info">
+                                            <h5 class="mentor-name">Pavan B</h5>
+                                            <p class="mentor-credentials">Technical Team Lead</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- HTML & CSS Technologies -->
+                <div class="tech-section" id="tech-html-css">
+                    <div class="tech-header">
+                        <h2 class="tech-title">HTML & CSS</h2>
+                        <p class="tech-subtitle">The building blocks of modern web development</p>
+                    </div>
+                    
+                    <div class="tech-grid">
+                        <!-- Technology 1 -->
+                        <div class="tech-card">
+                            <div class="tech-card-header">
+                                <h3 class="tech-name">HTML5 Fundamentals</h3>
+                                <span class="tech-icon"><i class="fab fa-html5"></i></span>
+                            </div>
+                            <p class="tech-description">Learn to structure web content with HTML5 elements, semantic markup, forms, and multimedia integration.</p>
+                            
+                            <div class="mentors">
+                                <h4 class="mentors-title">Mentors</h4>
+                                <div class="mentors-list">
+                                    <div class="mentor">
+                                        <img src="/images/hanumanthu.jpeg" alt="Ms. Kavita Reddy" class="mentor-image">
+                                        <div class="mentor-info">
+                                            <h5 class="mentor-name">Hanumanthu</h5>
+                                            <p class="mentor-credentials">Web Developer</p>
+                                        </div>
+                                    </div>
+                                    <div class="mentor">
+                                        <img src="/images/madhu.jpeg" alt="Mr. Arjun Singh" class="mentor-image">
+                                        <div class="mentor-info">
+                                            <h5 class="mentor-name">Madhu Kumar</h5>
+                                            <p class="mentor-credentials">Web Developert</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Year Navigation Footer -->
+        <section class="year-footer">
+            <div class="container">
+                <div class="year-nav-footer">
+                    <p>Continue your learning journey</p>
+                    <div class="year-buttons">
+                        <a href="second_year.html" class="btn btn-primary">Next: Second Year Courses</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo-link">
+                       <img src="/images/tech_path_logo_concept2__1_-removebg-preview.png" style="width: 90px; height: 50px;">
+                    </a>
+                    <p class="footer-tagline">Guiding Your Educational Journey</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#process">Process</a></li>
+                        <li><a href="index.html#reviews">Reviews</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-heading">Course Years</h4>
+                    <ul class="footer-nav">
+                        <li><a href="first_year.html">First Year</a></li>
+                        <li><a href="second_year.html">Second Year</a></li>
+                        <li><a href="third_year.html">Third Year</a></li>
+                        <li><a href="fourth_year.html">Fourth Year</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <ul class="footer-contact-list">
+                        <li>+91 83438 18181</li>
+                        <li>support@techpath.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 Tech Path. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

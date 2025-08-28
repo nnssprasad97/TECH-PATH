@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech-Path</title>
+    <link rel="icon" type="image/x-icon" href="/images/tech_path_logo_concept2__1_-removebg-preview.png">
+    <link rel="stylesheet" href="/css/trail2.css">
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/year_slider.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      /* Base Styles */
+      * {
+        margin: 0;
+
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 16px;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        color: #333333;
+        line-height: 1.6;
+        background-color: #f3f1f1;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        line-height: 1.3;
+        margin-bottom: 1rem;
+      }
+      p {
+        margin-bottom: 1rem;
+      }
+      a {
+        color: #008738;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #005f30;
+      }
+      ul, ol {
+        list-style: none;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+      /* Container */
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+      }
+      /* Section Styles */
+      section {
+        padding: 3rem 0;
+      }
+      .section-header {
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+      .section-title {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+        color: #333333;
+      }
+      .section-subtitle {
+        font-size: 1.1rem;
+        color: #666666;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+      /* Button Styles */
+      .btn {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        font-weight: 500;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+        font-family: "Poppins", sans-serif;
+      }
+      .btn-primary {
+        background-color: #008738;
+        color: white;
+        transition: 
+          background-color 0.3s ease,
+          color 0.3s ease,
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+      .btn-primary:hover {
+        background-color: rgb(0,95,39);
+        color: white;
+        border-color: rgb(0, 95, 39);
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(0, 95, 39, 0.6); 
+      }
+      .btn-primary:active {
+        transform: scale(0.95);
+        box-shadow: 0 2px 10px rgba(0, 95, 39, 0.3);
+      }
+      .btn-secondary {
+        background-color: rgb(238, 192, 86);
+        color: white;
+        transition:
+          background-color 0.3s ease,
+          color 0.3s ease,
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+      .btn-secondary:hover {
+        background-color: rgb(244, 180, 30);
+        color: white;
+        border-color: rgb(244, 180, 30);
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(244, 180, 30, 0.6);
+      }
+      .btn-secondary:active {
+        transform: scale(0.95);
+        box-shadow: 0 2px 10px rgba(244, 180, 30, 0.3);
+      }
+      .btn-outline {
+        background-color: transparent;
+        border: 2px solid #008738;
+        color: #008738;
+      }
+      .btn-outline:hover {
+        background-color: #008738;
+        color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      /* Background Video Styles */
+      .hero {
+  position: relative;
+  min-height: 100vh;     
+  overflow: hidden;      
+  display: flex;
+  align-items: center;    
+}
+      .hero-content {
+        position: relative; 
+        z-index: 2; 
+      }
+      .hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;          
+  height: 890px;
+  object-fit: cover;
+  opacity: 0.3;
+  z-index: 1;
+  pointer-events: none; 
+}
+
+      /* Dropdown Menu */
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        padding: 0.5rem 0;
+        min-width: 150px;
+        z-index: 1001;
+      }
+
+      .nav-item {
+        position: relative;
+      }
+
+      .nav-item:hover .dropdown-menu {
+        display: block;
+      }
+
+      .dropdown-item {
+        display: block;
+        padding: 0.5rem 1rem;
+        color: #333;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .dropdown-item:hover {
+        background-color: #f5f5f5;
+        color: #008738;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <div class="logo">
+          <a href="#" class="logo-link">
+            <img src="../images/tech_path_logo_concept2__1_-removebg-preview.png" alt="">
+          </a>
+        </div>
+
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+            <li class="nav-item">
+              <a href="#process" class="nav-link">Process</a>
+            </li>
+            <li class="nav-item">
+              <a href="#reviews" class="nav-link">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a href="#year-selector" class="nav-link">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a href="#contact" class="btn btn-primary header-cta">Register Now</a>
+      </div>
+    </header>
+
+    <main>
+        <!-- This is the main content area of the webpage. -->
+      <section id="home" class="hero">
+        <video src="/images/My movie 6.mp4" autoplay loop muted></video>
+        <div class="container hero-container">
+          <div class="hero-content">
+            <h1 class="hero-title">
+              Your Path to Academic Success Starts Here
+            </h1>
+            <p class="hero-subtitle">
+              Transparent, Efficient Seat Counselling for Your Educational
+              Journey
+            </p>
+            <div class="hero-cta">
+              <a href="#process" class="btn btn-primary"
+                >Explore Counselling Process</a
+              >
+              <a href="#reviews" class="btn btn-secondary"
+                >View Success Stories</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="section-how">
+        <div class="process-container">
+          <!-- STEP 01 -->
+          <div class="step-text-box">
+            <p class="step-number">01</p>
+            <h3 class="heading-tertiary">Registration</h3>
+            <p class="step-description">
+              To continue, you need to register on our website. Student registration is
+              mandatory to complete the process.
+              Please provide accurate details to ensure a smooth experience.
+            </p>
+          </div>
+          <div class="step-img-box">
+            <img src="/images/registration-iphone.png" class="step-img" alt="iPhone app preferences selection screen" />
+          </div>
+
+          <!-- STEP 02 -->
+          <div class="step-img-box">
+            <img src="/images/interviewslot-iphone.png" class="step-img" alt="iPhone app meal approving plan screen" />
+          </div>
+          <div class="step-text-box">
+            <p class="step-number">02</p>
+            <h3 class="heading-tertiary">Book your slot</h3>
+            <p class="step-description">
+              After completing registration, the next phase is to book 
+              a slot for counselling and interview through the website.
+            </p>
+          </div>
+
+          <!-- STEP 03 -->
+          <div class="step-text-box">
+            <p class="step-number">03</p>
+            <h3 class="heading-tertiary">Choose your courses</h3>
+            <p class="step-description">
+              After completing the interview process, students must select their
+              preferred technology domain. Choosing the right domain is crucial 
+              for aligning with your interests and career goals.
+            </p>
+          </div>
+          <div class="step-img-box">
+            <img src="/images/technologies-iphone.png" class="step-img" style="width: 50%;" alt="iPhone app delivery screen" />
+          </div>
+        </div>
+      </section>
+      <section id="reviews" class="reviews">
+        <center>
+          <h2 class="success-title">Success Stories</h2>
+          <p class="success-subtitle">
+            Hear from students who found their ideal academic path through our counselling
+          </p>
+        </center>
+
+        <div class="slider">
+          <div class="success-container">
+            <div class="quote">
+              <p>
+                "The Drive Ready program has been a game-changer for me. The practical approach to learning has made all the difference. This method has boosted my confidence and skills. I highly recommend it to anyone looking to become a proficient individual."
+              </p>
+              <div class="stars">★★★★★</div>
+              <p class="student-name">Umesh</p>
+              <p class="student-details">B.Tech Computer Science, 2024</p>
+            </div>
+            <div class="success-image">
+              <img src="/images/image.png" alt="Umesh" loading="eager">
+            </div>
+          </div>
+          <div class="success-container">
+            <div class="quote">
+              <p>
+                "Thanks to the personalized guidance, I was able to discover my true passion for data science. The counselling sessions were insightful and helped me choose the right academic path. I'm now thriving in my career!"
+              </p>
+              <div class="stars">★★★★★</div>
+              <p class="student-name">Tarun</p>
+              <p class="student-details">B.Tech Computer Science, 2024</p>
+            </div>
+            <div class="success-image">
+              <img src="/images/23A91A0545.png" alt="Tarun" loading="lazy">
+            </div>
+          </div>
+          <div class="success-container">
+            <div class="quote">
+              <p>
+                "The support I received was exceptional. The mentors helped me navigate my options and build a strong foundation in engineering. I'm now working at my dream company, and I owe it all to this program."
+              </p>
+              <div class="stars">★★★★★</div>
+              <p class="student-name">NNSS</p>
+              <p class="student-details">B.Tech Computer Science, 2024</p>
+            </div>
+            <div class="success-image">
+              <img src="/images/23P31A1250.png" alt="nnss" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container">
+          <!--It contains 2 div's : first one is contact details, second one is registration form-->
+          <div class="section-header">
+            <h2 class="section-title">Start Your Journey Today</h2>
+            <p class="section-subtitle">Register for our seat counselling service or get in touch with support team</p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-info">
+              <h3>Contact Information</h3>
+              <ul class="contact-list">
+                <li class="contact-item">
+                  <i class="fa-solid fa-phone"></i>
+                  <span class="contact-text">+91 83438 18181</span>
+                </li>
+                <li class="contact-item">
+                  <i class="fa-solid fa-envelope"></i>
+                  <span class="contact-text">support@techpath.io</span>
+                </li>
+              </ul>
+
+              <h3>Support Hours</h3>
+              <p class="support-hours">Monday to Friday: 9:00 AM - 6:00 PM<br/>Saturday: 10:00 AM - 2:00 PM</p>
+
+              <div class="social-links">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+            </div>
+
+            <div class="contact-form-container">
+              <form class="contact-form">
+                <div class="form-group">
+                  <label for="name" class="form-label">Full Name</label>
+                  <input type="text" class="form-input" placeholder="Enter your full name" required/>
+                </div>
+
+                <div class="form-group">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input type="email" class="form-input" placeholder="Enter your email address" required/>
+                </div>
+
+                <div class="form-group">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input type="tel" class="form-input" placeholder="Enter your phone number" required/>
+                </div>
+
+                <div class="form-group">
+                  <label for="message" class="form-label">Message (Optional)</label>
+                  <textarea class="form-textarea" placeholder="Enter any additional information or questions"></textarea>
+                </div>
+
+               
+                  <button type="submit" class="btn btn-primary form-submit">
+                 <a href="/html/login.html" style="color: white;" target="_blank"> Register Now </a>
+                </button>
+                </a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Year Selector Section -->
+      <section id="year-selector" class="year-selector-container">
+        <div class="container">
+          <h2 class="year-selector-title">Select Your Course Year</h2>
+          <div class="year-slider">
+            <div class="year-container">
+              <a href="first_year.html" class="year-content">
+                <span class="year-number">1</span>
+                <span class="year-text">First Year</span>
+              </a>
+            </div>
+            <div class="year-container">
+              <a href="second_year.html" class="year-content">
+                <span class="year-number">2</span>
+                <span class="year-text">Second Year</span>
+              </a>
+            </div>
+            <div class="year-container">
+              <a href="third_year.html" class="year-content">
+                <span class="year-number">3</span>
+                <span class="year-text">Third Year</span>
+              </a>
+            </div>
+            <div class="year-container">
+              <a href="fourth_year.html" class="year-content">
+                <span class="year-number">4</span>
+                <span class="year-text">Fourth Year</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <!-- This section contains the footer of the webpage. -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#" class="logo-link">
+               <img src="../images/tech_path_logo_concept2__1_-removebg-preview.png" alt="">
+            </a>
+            <p class="footer-tagline">Guiding Your Educational Journey</p>
+          </div>
+
+          <div class="footer-links">
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul class="footer-nav">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#process">Process</a></li>
+              <li><a href="#reviews">Reviews</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4 class="footer-heading">Course Years</h4>
+            <ul class="footer-nav">
+              <li><a href="first_year.html">First Year</a></li>
+              <li><a href="second_year.html">Second Year</a></li>
+              <li><a href="third_year.html">Third Year</a></li>
+              <li><a href="fourth_year.html">Fourth Year</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4 class="footer-heading">Contact Us</h4>
+            <ul class="footer-contact-list">
+              <li>+91 83438 18181</li>
+              <li>support@TechPath.com</li>
+              <!-- <li>123 Education Street, Knowledge City, India - 100001</li> -->
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">© 2025 TechPath. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
